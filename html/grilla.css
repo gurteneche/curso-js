@@ -1,0 +1,16 @@
+body {
+	background-color: #eee;
+}
+
+.grid {
+	#display: inline-grid;
+	display: grid;
+	#grid-template-rows: 50px 100px;
+	#grid-template-columns: 90px 50px 120px ;
+	grid-template-rows: [Row-1-Inicio] 50px [row-2-inicio] 50px;
+	grid-template-columns: [cpl-1-inicio] 1fr [col-2-start] 1fr;
+}
+
+.element {
+	background-color: red;
+}

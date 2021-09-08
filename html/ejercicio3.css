@@ -1,0 +1,25 @@
+body {
+	background-color: #eee;
+}
+
+p {
+	color: green;
+	text-align: left;
+	#text-decoration: underline;
+	text-indent: 30px;
+	line-height: 1.7;
+	word-spacing: 3px;
+	text-shadow: 5px 2px 2px rgba(0,0,0,0.3);
+	#los 3 primeros valores indican el desplazamiento de la sombra
+	#el rgba el cuarto valor indica el tinte o transparencia del valor
+	# 0.1 indica un 10% de intensidad del color
+}
+
+a {
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+}
+
+

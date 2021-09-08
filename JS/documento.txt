@@ -1,0 +1,4 @@
+touch index.js  (crea el archico llamado index.js - javascript)
+node index.js (lo ejecuta previa instalaciín de los paquetes node)
+
+

@@ -1,0 +1,66 @@
+instrucción
+npm es el manejador de paquetes de node
+
+>npm init -y
+
+-i es la instrucción para poder instalar
+-S para que se guarde dentro de las dependencias
+-express es la librería que vamos a utilizar
+-4.17.1 es la versión
+
+expressjs.com esta la documentación
+
+>npm i -S express@4.17.1
+
+vercel.com para desplegar nuestras aplicaciones
+
+npm i -g vercel@19.0.1
+vercel init
+
+vercel login
+Connect your Git Repositories to deploy every branch push automatically (https://zeit.ink/1X).
+ Linked to gurteneche-qworkcomar/serverless (created .vercel and added it to .gitignore)
+🔍  Inspect: https://vercel.com/gurteneche-qworkcomar/serverless-r7gn22k3y-gurteneche/qworkcomar [3s]
+✅  Production: https://serverless-six-bice.vercel.app [copied to clipboard] [24s]
+📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+💡  To change the domain or build command, go to https://vercel.com/gurteneche-qworkcomar/serverless/settings
+
+MongoDB Cluster
+mongodb+srv://guilleu:<password>@cluster0.wqqm3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+npm i -S express mongose body-parser cors
+
+mongose: es la libreria para conectarnos a mongodb, luego la libreria de body-parser que maneja las peticiones y cors es una libreria
+que habilita la petición desde una url diferente.
+
+github / gurteneche/gou8279A
+
+
+-----------------------------------
+const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+
+const app = express()
+app.use(bodyParser.json())
+app.use(cors())
+
+#mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true })
+#mongodb+srv://guilleu:qwguilleuqw@cluster0.wqqm3.mongodb.net/Cluster0?retryWrites=true&w=majority
+
+app.get('*', (req, res) => {
+	res.send('Hola mundo')
+})
+
+module.exports = app
+
+-------------
+
+#module.exports = (req, res) => {
+#	res.send('Hola mundo')
+#}
+
+
+
+
